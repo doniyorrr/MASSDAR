@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/doniyorrr/react-deploy.git/static/css/main.f547f4b8.css",
-    "main.js": "/doniyorrr/react-deploy.git/static/js/main.5c6b8e7d.js",
-    "index.html": "/doniyorrr/react-deploy.git/index.html",
-    "main.f547f4b8.css.map": "/doniyorrr/react-deploy.git/static/css/main.f547f4b8.css.map",
-    "main.5c6b8e7d.js.map": "/doniyorrr/react-deploy.git/static/js/main.5c6b8e7d.js.map"
+    "main.css": "/react-deploy/static/css/main.f547f4b8.css",
+    "main.js": "/react-deploy/static/js/main.5c6b8e7d.js",
+    "index.html": "/react-deploy/index.html",
+    "main.f547f4b8.css.map": "/react-deploy/static/css/main.f547f4b8.css.map",
+    "main.5c6b8e7d.js.map": "/react-deploy/static/js/main.5c6b8e7d.js.map"
   },
   "entrypoints": [
     "static/css/main.f547f4b8.css",
