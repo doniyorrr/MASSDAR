@@ -1,16 +1,17 @@
 import React from "react";
 import massdar from "./images/massdar.5701287b.png";
-import {BiUserCircle} from "react-icons/bi"
+import {FaBars} from "react-icons/fa"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav id="header" className="fixed w-full z-10 top-0 bg-white border-b border-gray-400">
-         <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
+         <div className="w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-4">
             <div className="pl-4 flex items-center">
+               <Link className=" text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl"  to="/"> 
                <img src={massdar} alt="massdar" width={200} />
-               <a className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl"  href="/"> 
-               
-               </a>
+               </Link>
+               <FaBars className="ml-3"/>
             </div>
             <div className="block lg:hidden pr-4">
                <button id="nav-toggle" className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-purple-500 appearance-none focus:outline-none">

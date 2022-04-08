@@ -1,0 +1,6 @@
+.side-menu.inactive {
+    width: 80px;
+}
+.side-menu.inactive .toggle-menu-btn{
+    right: -60px;
+}
