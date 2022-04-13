@@ -11,6 +11,11 @@
 .side-menu.inactive .side-menu-footer .user-info{
     display: none;
 }
+
+.side-menu.inactive .logo img{
+    display: none;
+}
+
 .side-menu .main-menu .sub-menu.active{
     display: block;
 }

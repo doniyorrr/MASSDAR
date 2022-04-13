@@ -9,7 +9,6 @@ const Home = () => {
     
     return (
         <div className='h-full flex'>
-            <p>{}</p>
             <img src={logo}  alt="massdar" className='w-4/5 m-auto items-center'/>
         </div>
     );

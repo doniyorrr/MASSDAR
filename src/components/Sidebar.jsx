@@ -62,11 +62,11 @@ function Sidebar(prompt) {
     <div
       className={`side-menu ${
         inActive ? "inactive" : ""
-      }  fixed bg-black w-80 h-full box-border p-5 `}
+      }  fixed bg-black w-80 h-full box-border p-5 duration-500`}
     >
       <div className="top-section relative">
         <div className="logo overflow-hidden w-40 m-auto h-20 inline-block">
-          <img src={logo} alt="logo" className="max-w-full max-h-full" />
+          <img src={logo} alt="logo" className="max-w-full max-h-full duration-200" />
         </div>
         <div
           onClick={() => setInActive(!inActive)}

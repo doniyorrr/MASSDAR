@@ -6,11 +6,11 @@ const Menuitem = (props) => {
   const [active, setActive] = useState(false);
 
   return (
-    <li className="">
+    <li className="" onClick={props.onClick}>
       <NavLink
         onClick={() => setActive(!active)}
         to={to}
-        className="menu-item block text-gray-500 text-base font-semibold"
+        className="menu-item block text-gray-500 text-base font-semibold active:bg-gray-500 active:text-gray-900"
       >
         <div className="menu-icon inline-block w-10 h-10 text-xl text-center leading-10">
           {icon}
