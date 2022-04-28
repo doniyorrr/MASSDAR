@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MASSDAR/static/css/main.c1fd74ae.css",
-    "main.js": "/MASSDAR/static/js/main.7276d94e.js",
+    "main.css": "/MASSDAR/static/css/main.19c72214.css",
+    "main.js": "/MASSDAR/static/js/main.de328d4a.js",
     "static/media/massdar.5701287b.png": "/MASSDAR/static/media/massdar.5701287b.2b54f3c57070c345cac4.png",
     "index.html": "/MASSDAR/index.html",
-    "main.c1fd74ae.css.map": "/MASSDAR/static/css/main.c1fd74ae.css.map",
-    "main.7276d94e.js.map": "/MASSDAR/static/js/main.7276d94e.js.map"
+    "main.19c72214.css.map": "/MASSDAR/static/css/main.19c72214.css.map",
+    "main.de328d4a.js.map": "/MASSDAR/static/js/main.de328d4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1fd74ae.css",
-    "static/js/main.7276d94e.js"
+    "static/css/main.19c72214.css",
+    "static/js/main.de328d4a.js"
   ]
 }
