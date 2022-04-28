@@ -1,0 +1,5 @@
+export const GET_LEADS = "GET_LEADS"
+export const GET_PRODUCT = "GET_PRODUCT"
+export const GET_CATEGORY = "GET_CATEGORY"
+export const DELETE_PRODUCT = "DELETE_PRODUCT"
+export const ADD_PRODUCT = "ADD_PRODUCT"

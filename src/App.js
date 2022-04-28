@@ -1,49 +1,45 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import axios from "axios";
 import "./App.css";
-import Footer from "./components/Footer";
+import { ToastContainer } from "react-toastify";
+// import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Addproduct from "./components/omborlar/AddProduct";
 import Allproduct from "./components/omborlar/AllProduct";
 import Omborlar from "./components/omborlar/Omborlar";
 import Sidebar from "./components/Sidebar";
+import Login from "./components/user/LogIn";
+import Users from "./components/user/users";
+import Category from "./components/omborlar/Category";
 
 
 function App() {
 
-  const [value , setValue] = useState([])
-
-  useEffect(()=> {
-    axios.get("http://127.0.0.1:8000/api/product/")
-    .then(res => setValue(res.data))
-    .catch(err => console.log(err))
-    
-  } , [])
-
-
+  
   const [inActive , setInActive] = useState(false)
 
   return (
     <>
+          <Navbar/>
       <Sidebar 
         onCollapse={(inactive)=>{
-          console.log(inactive)
           setInActive(inactive)
         }}
-      
       />
+      
       <div className={`section ${inActive ? "inactive" : ""}`}>
         <Routes>
           <Route path="/*" element={<Home />} />
           <Route path="/kirim" element={<Addproduct />} />
-          <Route path="/allProducts" element={<Allproduct product={value}/>} />
+          <Route path="/allProducts" element={<Allproduct/>} />
           <Route path="/omborlar" element={<Omborlar />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/users" element={<Users/>} />
+          <Route path="/category" element={<Category/>} />
         </Routes>
       </div>
-
-      {/* <Navbar/> */}
+      <ToastContainer/>
       {/* <Demo/> */}
 
       {/* <Footer/> */}

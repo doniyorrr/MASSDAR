@@ -1,6 +1,6 @@
 import React from "react";
 import massdar from "./images/massdar.5701287b.png";
-import {FaBars} from "react-icons/fa"
+import {BiUser} from "react-icons/bi"
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -11,7 +11,6 @@ const Navbar = () => {
                <Link className=" text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl"  to="/"> 
                <img src={massdar} alt="massdar" width={200} />
                </Link>
-               <FaBars className="ml-3"/>
             </div>
             <div className="block lg:hidden pr-4">
                <button id="nav-toggle" className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-purple-500 appearance-none focus:outline-none">
@@ -34,7 +33,10 @@ const Navbar = () => {
                </div>
                <ul className="list-reset lg:flex justify-end items-center">
                   <li className="mr-3 py-2 lg:py-0">
-                     <a className="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="#">Active</a>
+                     <a className="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="#">Admin</a>
+                  </li>
+                  <li className="mr-3 py-2 lg:py-0">
+                     <BiUser/>
                   </li>
                   
                </ul>

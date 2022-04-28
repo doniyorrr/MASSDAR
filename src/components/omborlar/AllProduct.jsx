@@ -1,13 +1,25 @@
-import React from 'react';
+import { useEffect } from "react";
+import Productcart from './ProductCart';
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts , deleteProduct } from "../../actions/products";
 
-const Allproduct = ({product}) => {
+const Allproduct = () => {
+
+    const dispatch = useDispatch()
+    const {products} = useSelector((state)=> state.products)
+    
+    useEffect(()=> {
+      dispatch(getProducts())
+    } , [])
+    
+    const handleDelete = ( id ) => {
+      if(window.confirm("Siz xaqiqatdan ham bu maxsulotni ochirmoqchimisiz")){
+        dispatch(deleteProduct(id))
+      }
+    }
+    
     return (
-        product.map((val )=>(
-            <div key={val.id}>
-                <h1>{val.name}</h1>
-                <p>{val.price}</p>
-            </div>
-        ))
+        <Productcart product={products} deleteProduct={handleDelete}/>
     );
 }
 

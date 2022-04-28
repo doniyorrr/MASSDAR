@@ -3,8 +3,9 @@ import logo from "./images/massdar.5701287b.png"
 
 const Home = () => {
 
-    const res = fetch("https://nbu.uz/uz/exchange-rates/json/")
-    .then(data => data.json())
+    // const res = fetch("https://nbu.uz/uz/exchange-rates/json/")
+    // .then(data => data.json())
+    // .then(data => console.log(data))
 
     
     return (
